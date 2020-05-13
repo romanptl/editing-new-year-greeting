@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>New Year greetings</title>
+  </head>
+  <body>
+    <div id="year" class="year"></div>
+
+    <h1>Новорічне привітання</h1>
+
+    <div id="countdown" class="countdown">
+      <div class="time">
+        <h2 id="days">00</h2>
+        <small>Дні</small>
+      </div>
+      <div class="time">
+        <h2 id="hours">00</h2>
+        <small>Години</small>
+      </div>
+      <div class="time">
+        <h2 id="minutes">00</h2>
+        <small>Хвилини</small>
+      </div>
+      <div class="time">
+        <h2 id="seconds">00</h2>
+        <small>Секунди</small>
+      </div>
+    </div>
+    <img src="./img/spinner.gif" alt="Loading..." id="loading" class="loading"/>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Привітати Вас?</h2>
+        <div class="form-control">
+          <input type="text" id="username" placeholder="Ім'я" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input type="text" id="email" placeholder="Email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input type="number-phone" id="number-phone" placeholder="Номер телефону" />
+          <small>Error message</small>
+        </div>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
